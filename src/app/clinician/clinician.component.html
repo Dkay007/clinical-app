@@ -1,0 +1,18 @@
+
+<div class="main-container">
+    <button type="button" mat-button (click)="logout()" class="logout">logout</button>
+    <div class="clinical-header">
+        <div class="clinical-header-text">Clinical Portal</div>
+        <div class="clinician-detail">{{clinicianDetail$ | async}}</div>
+    </div>  
+
+  <ng-container *ngIf="(patients$ | async) as patients">
+    <mat-tab-group  class="patient-container" >
+      <mat-tab *ngFor="let patient of patients.patients" [label]="patient.name +' (' + patient.id +')'">
+        <app-patient [id]="patient.id"></app-patient>
+      </mat-tab>
+    </mat-tab-group>
+  </ng-container>
+</div>
+
+

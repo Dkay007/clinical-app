@@ -1,0 +1,7 @@
+
+
+<ng-container *ngIf="(patientDetail$ | async) as patientData">    
+    <mat-card>
+        <mat-card-content  *ngFor="let data of patientData">{{ data }}</mat-card-content>
+    </mat-card>      
+</ng-container>

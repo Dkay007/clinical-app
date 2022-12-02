@@ -1,0 +1,38 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+.clinical-header-text{
+    flex-grow: 0.25;
+    align-self: flex-end;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.clinical-header{
+    width: 50%;
+}
+
+.clinician-detail{
+    flex-grow: 0.25;
+    align-self: flex-end;
+    padding: 2rem;;
+    border: 0.1rem solid ;
+    flex: 1;
+}
+
+.logout {
+    align-self: flex-end;
+}
+
+.patient-container {
+    border: 0.1rem solid ;
+    width: 50%;
+}
+.clinical-header{
+    display: flex;
+}
+
